@@ -1,0 +1,18 @@
+Análisis Numérico 
+Tarea 1: Aplicaciones en ingeniería de métodos en la solución de ecuaciones complejas. (Método de bisección, posición falsa, 
+secante Newton, Newton Raphson, entre otros). 
+
+Mecánica de Fluidos 
+En esta rama de la ingeniería diversos fenómenos físicos son difíciles de abortar debido a la complejidad de ciertas ecuaciones. 
+Por ende, se buscan distintas alternativas para llegar a una solución optima al problema. El análisis numérico es una herramienta 
+eficaz en estos casos, ya que permite abordar el desafío desde una perspectiva numérica, como es el caso de los vientos sobre alguna 
+estructura. Los laboratorios virtuales del presente permiten modelar de forma eficiente y muy realista la penetración del aire 
+determinando el coeficiente de penetración del aire sobre un vehículo en un proceso de producción en masa, logrando obtener datos 
+sumamente importantes para analizar todos los aspectos relevantes obteniendo un producto de calidad. Optimizando la funcionalidad, 
+servicialidad, temas económicos, seguridad, ergonomía, etc.  Por ejemplo: el gasto energético que incide sobre un carro para lograr 
+tener una velocidad constante o construir de la mejor manera una pieza mecánica aprovechando todos los recursos. 
+
+
+Referencia:
+Botello, (2007). Ejemplos de Aplicación de los Métodos Numéricos a Problemas de Ingeniería.
+Tomado de : https://www.cimat.mx/Eventos/tallermn/img/botello_rionda.pdf 
