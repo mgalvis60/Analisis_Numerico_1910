@@ -1,0 +1,46 @@
+#Mateo Galvis López
+
+#Bisección en R Cody 
+
+#Parametros inciales (Modificables) :
+a <-1
+b <-2
+Error1<-1.e-8
+#Función:
+fx<- function(x)
+{
+  f1<-pi*x*exp(x)
+  return (f1) ;
+}
+
+#Variables
+xr<-0;
+conta <-0
+Error2 <-Error1+1
+
+#Interaciones
+
+while(Error2>Error1)
+  {
+    anterior<-xr
+    xr<-(a+b)/2
+    fa<- fx(a)
+    fxr<- fx(xr)
+    if(fa*fxr==0)
+      print(xr)
+    if(fa*fxr<0)
+      { 
+       b<-fxr
+      }
+    if(fa*fxr>0)
+      { 
+       a<-fxr
+      }
+    if(conta>0)
+      {
+        Error2<-abs((xr-anterior)/xr)
+        print(Error2)
+    }
+    conta<-conta+1
+    print(conta)
+}
