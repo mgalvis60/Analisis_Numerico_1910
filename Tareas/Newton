@@ -1,0 +1,20 @@
+# Mateo Galvis
+#Determinar las Raices
+
+FX<-function(x)exp(x)-pi
+fx<-function(x)exp(x)
+
+newton<-function(x1,){
+  conta<-0
+  error<-1
+  while(error!=0)
+  {
+    x2<-x1-(FX(x1)/fx(x1))
+    error<-abs(FX(x1)/fx(x1))
+    if(error==0)break;
+    cat("X=",x1,"\t","E=",error,"\tIteración=",conta,"\n")
+    x1<-x2
+    conta<-conta+1
+  }
+}
+newton(1)
