@@ -1,12 +1,15 @@
-# Mateo Galvis
 #Determinar las Raices
 
 FX<-function(x)exp(x)-pi
 fx<-function(x)exp(x)
 
-newton<-function(x1,){
+newton<-function(x1){
   conta<-0
   error<-1
+  x<-x1
+  x<-seq(-3,3,0.001)
+  plot(x,FX(x),type = "l",col="red")
+  abline(h=0,col="blue")
   while(error!=0)
   {
     x2<-x1-(FX(x1)/fx(x1))
