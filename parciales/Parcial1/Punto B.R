@@ -1,9 +1,9 @@
 lectura<-function()
 {
   
-  print("Ingrese el número de filas")
+  print("Ingrese el nÃºmero de filas")
   n<-scan(what=double(),nmax = 1)
-  print("Ingrese el número de columnas")
+  print("Ingrese el nÃºmero de columnas")
   m<-scan(what=double(),nmax = 1)
   if(m-n>1)
   {
@@ -34,7 +34,7 @@ main<-function(n,m)
       matriz[k,C]=matriz[k,C]/val
     }
     op<-op+1
-    cat("MATRIZ CON PIVOTE","Iteración:",conta,"\n")
+    cat("MATRIZ CON PIVOTE","IteraciÃ³n:",conta,"\n")
     print(matriz)
     
     for(f in 1:n)
@@ -71,7 +71,7 @@ main<-function(n,m)
       }
       
     }
-    cat("MATRIZ con Iteración:",conta,"\n")
+    cat("MATRIZ con IteraciÃ³n:",conta,"\n")
     print(matriz)
     conta<-conta+1
   }
@@ -87,7 +87,7 @@ main<-function(n,m)
   cat("=========================\n")
   print("MATRIZ CON ESCAlONADA REDUCIDA con (error de redonde 4 cifras):")
   print(matriz)
-  cat("\nEl número de operaciones totales:\t",op,"\n")
+  cat("\nEl nÃºmero de operaciones totales:\t",op,"\n")
   cat("=========================\n")
   cat("=========================\n")
 }
