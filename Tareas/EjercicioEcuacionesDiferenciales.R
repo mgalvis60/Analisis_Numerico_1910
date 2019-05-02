@@ -1,24 +1,40 @@
 #Ejercicio Ecuaciones Diferenciales : Ejercicio masa - resorte . 
 
-#M骴elo Te髍ico 
+#M贸delo Te贸rico 
 
-#Funci觧 de posici髇 
+#a) Deterimar la posici贸n despu茅s de 3 s. 
+#b) Deterimar la posici贸n despu茅s de 5 s. 
+#c) Determinar el tiempo donde la masa pase por la posici贸n de equilibrio
+#d) Determinar el tiempo donde la masa alance su m谩ximo.
+#e) Encuntre la amplitud, periodo, frecuencia 
+#f) Determine la gr谩fica (Utilice Interpolaci贸n )
+#g) Solucione el sistema por EDO^2(Utilice la libreria), compare la soluci贸n con el m茅todo exacto
+#f) Realice un ajuste de curva utilizabndo la soluci贸n exacta
+
+
+#Soluci贸n:  
+
+#Funci脫n de posici贸n 
 fx1<-function(t)2/3 *cos(8*t) - 1/6 *sin(8*t)
-#FUnci髇 de velocidad
+#FUnci贸n de velocidad
 fx2<-function(t) -16/3* sin(8*t) - 4/3 * cos(8*t)
-#Funci髇 de acceleraci髇 
+#Funci贸n de acceleraci贸n 
 fx3<-function(t) -128/3 * cos(8*t) + 32/3 * sin(8*t) 
 
 
-#Deterimar la posici髇 despu閟 de 3 s. 
+# a)
+
 XT1<-fx1(3)
 XT1
-#Deterimar la posici髇 despu閟 de 5 s. 
+
+# b) 
 XT2<-fx1(5)
 XT2
-#Determinar el tiempo donde la masa pase por la posici髇 de equilibrio
+# c)
 
-#Encuntre la amplitud, periodo, frecuencia 
+# d) 
+
+# e) 
 
 #Amplitud la formula es: A = ( x(0)^2 + (masa)^2  )^1/2
 
@@ -30,7 +46,7 @@ TT<- (2*(pi))/8
 #La formula de frecuencia es : f= 1/T
 f<- 8/(2*(pi))
 
-#Deterimne  la gr醘ia mediante interpolaci髇 gr醘ica, de posici髇 vs tiempo
+#f)
 x<-c()
 y<-c()
 x<-c(seq(0,10,0.5))
@@ -40,9 +56,17 @@ for(i in 1:21)
   y[i] <- fx1(x[i])
 }
 
-plot(x,y,pch=19)
+plot(x,y, pch=19, cex=1, col = "red", asp=1,xlab="Tiempo", ylab="Posici贸n", main="Tiempo vs Posici贸n, soluci贸n T茅orica")
+
+curve(fx1,add=T,from =0,to =10)
+
+#g) 
 
 
+#h) 
+
+#Ajuste de polin贸mico
+curve(fx1,add=T,from =0,to =10)
 
 
 
