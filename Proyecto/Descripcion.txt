@@ -1,0 +1,1 @@
+Este carpeta contiene los avances del proyecto de análisis Númerico. Donde de va a realizar un proyecto de aplicación 
