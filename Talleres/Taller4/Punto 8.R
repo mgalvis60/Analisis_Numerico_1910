@@ -1,7 +1,7 @@
-# Punto 2
+# Punto 8
 #Conjunto de ecuaciones diferenciales 
 
-#Solución por métodos númericos
+#SoluciÃ³n por mÃ©todos nÃºmericos
 ecuaciones<- function(t,y,parms)
 {
   with(as.list(y),{
@@ -18,7 +18,7 @@ sol1 = ode(datos, x1,ecuaciones,parms=NULL, method="rk4")
 
 tabla = cbind(x1,sol1[,2])
 tabla
-plot(x1,sol1[,2],xlab="Eje x", ylab="Eje y", main="Método de Runge-Kutta vs Solución exacta de la Ecuación Diferencial: X´´- 0.5 X - X´ = 0 con h1= 0.1 " )
+plot(x1,sol1[,2],xlab="Eje x", ylab="Eje y", main="MÃ©todo de Runge-Kutta vs SoluciÃ³n exacta de la EcuaciÃ³n Diferencial: XÂ´Â´- 0.5 X - XÂ´ = 0 con h1= 0.1 " )
 
 
 a1 = poly.calc(x1, sol1[,2])
